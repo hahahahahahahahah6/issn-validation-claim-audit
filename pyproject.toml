@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issn-validation-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim audit"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+issn-validation-claim-audit = "issn_validation_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["issn_validation_claim_audit*"]
